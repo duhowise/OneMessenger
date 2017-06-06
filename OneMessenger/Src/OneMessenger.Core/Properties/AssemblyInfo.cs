@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("OneMessener.Interfaces")]
+[assembly: AssemblyTitle("OneMessenger.Core")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OneMessener.Interfaces")]
+[assembly: AssemblyProduct("OneMessenger.Core")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("fb9807b0-b9f5-4b4c-bf35-8f2feeeef668")]
+[assembly: Guid("a9d55045-60e9-4c7d-a1bf-90acb7cf219c")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FB9807B0-B9F5-4B4C-BF35-8F2FEEEEF668}</ProjectGuid>
+    <ProjectGuid>{A9D55045-60E9-4C7D-A1BF-90ACB7CF219C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OneMessener.Interfaces</RootNamespace>
-    <AssemblyName>OneMessener.Interfaces</AssemblyName>
+    <RootNamespace>OneMessenger.Core</RootNamespace>
+    <AssemblyName>OneMessenger.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
