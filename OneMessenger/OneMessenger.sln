@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneMessenger.Core", "Src\OneMessenger.Client\OneMessenger.Core.csproj", "{4E62F374-A3BB-474E-B376-22977DD55A5C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneMessenger.Client", "Src\OneMessenger.Client\OneMessenger.Client.csproj", "{4E62F374-A3BB-474E-B376-22977DD55A5C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneMessenger.Server", "Src\OneMessenger.Server\OneMessenger.Server.csproj", "{AE3C1636-1F64-4EDA-B45D-86CE93A521F3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneMessener.Interfaces", "Src\OneMessener.Interfaces\OneMessener.Interfaces.csproj", "{FB9807B0-B9F5-4B4C-BF35-8F2FEEEEF668}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{AE3C1636-1F64-4EDA-B45D-86CE93A521F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE3C1636-1F64-4EDA-B45D-86CE93A521F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE3C1636-1F64-4EDA-B45D-86CE93A521F3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FB9807B0-B9F5-4B4C-BF35-8F2FEEEEF668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB9807B0-B9F5-4B4C-BF35-8F2FEEEEF668}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB9807B0-B9F5-4B4C-BF35-8F2FEEEEF668}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB9807B0-B9F5-4B4C-BF35-8F2FEEEEF668}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
