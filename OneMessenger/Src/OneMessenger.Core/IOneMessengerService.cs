@@ -11,7 +11,8 @@ namespace OneMessenger.Server
 	[ServiceContract]
 	public interface IOneMessengerService
 	{
-		[OperationContract]
-		void DoWork();
+		
 	}
+
+
 }

@@ -7,11 +7,9 @@ using System.Text;
 
 namespace OneMessenger.Server
 {
-	// NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "OneMessengerService" in both code and config file together.
+	[ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Multiple,InstanceContextMode = InstanceContextMode.Single)]
 	public class OneMessengerService : IOneMessengerService
 	{
-		public void DoWork()
-		{
-		}
+		
 	}
 }
