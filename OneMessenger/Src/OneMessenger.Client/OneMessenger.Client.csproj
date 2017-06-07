@@ -95,6 +95,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OneMessenger.Core\OneMessenger.Core.csproj">
+      <Project>{a9d55045-60e9-4c7d-a1bf-90acb7cf219c}</Project>
+      <Name>OneMessenger.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OneMessenger.Server\OneMessenger.Server.csproj">
+      <Project>{ae3c1636-1f64-4eda-b45d-86ce93a521f3}</Project>
+      <Name>OneMessenger.Server</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
