@@ -1,7 +1,8 @@
 ﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.ServiceModel;
+ using System.Security.Cryptography.X509Certificates;
+ using System.ServiceModel;
 using System.ServiceModel.Configuration;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,11 +40,42 @@ namespace OneMessenger.Client
 			{
 				MessageBox.Show(e.Message,"Sever not Runing");
 			}
+
+			TextDisplay.IsReadOnly = true;
+			MessageTextBox.Focus();
+
 		}
 
-		private void Test_Click(object sender, RoutedEventArgs e)
+		public void TakeMessage(string username,string message)
 		{
-			_server.Test("Hello World");
+			TextDisplay.Text += $"{username} : { message} \n";
+		}
+
+		private void BtnSend_Click(object sender, RoutedEventArgs e)
+		{
+			if (MessageTextBox.Text!="")
+			{
+				_server.SendMessageToAll(UserNameTextBox.Text, MessageTextBox.Text);
+				TakeMessage("You", MessageTextBox.Text);
+				MessageTextBox.Text = "";
+			}
+		}
+
+		private void btnlogin_Click(object sender, RoutedEventArgs e)
+		{
+			var value = _server.Login(UserNameTextBox.Text);
+
+			if (value==1)
+			{
+				MessageBox.Show("You are already logged in");
+			}
+			else
+			{
+				MessageBox.Show("Successfully logged in");
+				LblWelcome.Content = $"Welcome, {UserNameTextBox.Text}";
+				UserNameTextBox.IsEnabled = false;
+				btnlogin.IsEnabled = false;
+			}
 		}
 	}
 }

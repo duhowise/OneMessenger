@@ -7,7 +7,11 @@ namespace OneMessenger.Core
 	public interface IOneMessengerService
 	{
 		[OperationContract]
-		void Test(string value);
+		int Login(string username);
+
+
+		[OperationContract]
+		void SendMessageToAll(string username,string message);
 	}
 
 

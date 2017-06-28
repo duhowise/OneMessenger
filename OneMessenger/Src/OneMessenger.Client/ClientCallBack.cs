@@ -1,4 +1,5 @@
 ﻿using System.ServiceModel;
+using System.Windows;
 using OneMessenger.Core;
 
 namespace OneMessenger.Client
@@ -6,9 +7,10 @@ namespace OneMessenger.Client
 	[CallbackBehavior(ConcurrencyMode = ConcurrencyMode.Multiple)]
 	public class ClientCallback:IClient
 	{
-		public void PlaceHolder()
+		
+		public void GetMessage(string username, string message)
 		{
-			throw new System.NotImplementedException();
+			((MainWindow)Application.Current.MainWindow).TakeMessage(username,message);
 		}
 	}
 }

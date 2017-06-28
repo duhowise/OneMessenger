@@ -2,9 +2,10 @@
 
 namespace OneMessenger.Core
 {
+	[ServiceContract]
 	public interface IClient
 	{
 		[OperationContract]
-		void PlaceHolder();
+		void GetMessage(string username,string message);
 	}
 }

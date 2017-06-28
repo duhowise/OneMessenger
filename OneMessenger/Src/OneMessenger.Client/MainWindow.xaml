@@ -7,12 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button x:Name="btnlogin" Content="login" HorizontalAlignment="Right" Margin="0,27,181.5,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnlogin" Content="login" HorizontalAlignment="Right" Margin="0,27,181.5,0" VerticalAlignment="Top" Width="75" Click="btnlogin_Click"/>
         <TextBox x:Name="UserNameTextBox" HorizontalAlignment="Left" Height="23" Margin="10,26.46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="232.5"/>
-        <RichTextBox x:Name="TextDisplay" Margin="10,69,10,53">
-            <FlowDocument/>
-        </RichTextBox>
-        <Button x:Name="BtnSend" Content="Send" HorizontalAlignment="Right" Margin="0,0,10,12" VerticalAlignment="Bottom" Width="75" RenderTransformOrigin="2.473,0.524" IsDefault="True"/>
+        <TextBox x:Name="TextDisplay" Margin="10,69,10,53"/>
+        <Button x:Name="BtnSend" Content="Send" HorizontalAlignment="Right" Margin="0,0,10,12" VerticalAlignment="Bottom" Width="75" RenderTransformOrigin="2.473,0.524" IsDefault="True" Click="BtnSend_Click"/>
         <TextBox x:Name="MessageTextBox" Height="23" Margin="10,0,90,10" TextWrapping="Wrap" VerticalAlignment="Bottom"/>
         <Label x:Name="LblWelcome" Content="[UserName]" HorizontalAlignment="Right" Margin="0,20.665,10,0" VerticalAlignment="Top" HorizontalContentAlignment="Right" Width="158.665" FontSize="14.667"/>
 
