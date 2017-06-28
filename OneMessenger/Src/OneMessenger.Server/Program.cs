@@ -4,6 +4,7 @@ using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
+using OneMessenger.Core;
 
 namespace OneMessenger.Server
 {
@@ -18,7 +19,7 @@ namespace OneMessenger.Server
 			using (ServiceHost host=new ServiceHost(_sever))
 			{
 				host.Open();
-				Console.WriteLine("Server started");
+				Console.WriteLine("Server started......");
 				Console.ReadLine();
 			}
 		}

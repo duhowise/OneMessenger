@@ -11,6 +11,9 @@ namespace OneMessenger.Server
 	[ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Multiple,InstanceContextMode = InstanceContextMode.Single)]
 	public class OneMessengerService : IOneMessengerService
 	{
-		
+		public void Test(string value)
+		{
+			Console.WriteLine(value);
+		}
 	}
 }
